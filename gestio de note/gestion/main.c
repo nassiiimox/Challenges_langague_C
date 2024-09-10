@@ -15,9 +15,8 @@ int main()
     s=0;
     for(i=0;i<n;i++){
     s=s+t[i];
-    m=s/n;
-    }
-   int  min=0;
+    }m=s/n;
+   int  min=100;
     for(i=0;i<n;i++){
     if (t[i]<min){
     min=t[i];
@@ -33,21 +32,23 @@ int  max=0;
     }
 
             for(i=0;i<n;i++){
-                if(t[i]<12){
-
-                val ++;
-                }
-            }
-                for(i=0;i<n;i++){
                 if(t[i]>12){
 
+                val ++;
+
+                }
+            } ;
+                for(i=0;i<n;i++){
+                if(t[i]<12){
+
                     ratt++;
+
                 }int choix;
                  do {
-                printf("1 pour afficher la moyenne \n");
+                printf(" \n 1 pour afficher la moyenne \n");
                  printf("2 pour afficher la plus elevee et le plus basse \n");
-                  printf("4 pour afficher le nombre de validation \n ");
-                   printf("5 pour afficher le nombre de rattrapage \n ");
+                  printf("3 pour afficher le nombre de validation \n ");
+                   printf("4 pour afficher le nombre de rattrapage \n ");
                    scanf("%d",&choix);
                    switch(choix){
                    case 1 : printf("la moyenne des note est %d",m);
